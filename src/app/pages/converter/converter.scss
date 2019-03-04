@@ -1,0 +1,53 @@
+.converterBlock{
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+.converter {
+  background-color: #a1f5ae12;
+  border: 3px solid;
+  color: #5b6369;
+  padding: 30px;
+  border-radius: 5%;
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .mainForm{
+    margin-bottom: 27px;
+  }
+
+  .feeForm {
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+    margin-bottom: 0px;
+    padding: 0;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  .exchange {
+    margin-bottom: 16px;
+    font-size: 23px;
+    padding: 0px;
+    align-self: flex-end;
+    text-align: center;
+  }
+
+  .firstForm{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .secondForm {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+}
+
+
