@@ -1,6 +1,6 @@
 'use strict';
 
-export default class FooterController {
+export default class HeaderController {
     constructor($log) {
         'ngInject';
         this.$log = $log;
