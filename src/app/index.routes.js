@@ -1,7 +1,6 @@
 'use strict';
 
-
-import asyncTemplate from '!!file-loader?name=templates/[name].[ext]!./pages/async-page-example/async.html';
+import converterTemplate from '!!file-loader?name=templates/[name].[ext]!./pages/converter/converter.html';
 
 
 function routeConfig($urlRouterProvider, $stateProvider, resolverProvider) {
@@ -9,14 +8,14 @@ function routeConfig($urlRouterProvider, $stateProvider, resolverProvider) {
 
 
     $stateProvider
-        .state('async', {
-          url: '/async',
-          templateUrl: asyncTemplate,
-          controller: 'asyncController',
+        .state('converter', {
+          url: '/converter',
+          templateUrl: converterTemplate,
+          controller: 'converterController',
           resolve: {
-            asyncPreloading: resolverProvider.asyncPagePrealoading
+            asyncPreloading: resolverProvider.converterPagePrealoading
           }
-        });
+        })
 
 
   $urlRouterProvider.otherwise('/');
