@@ -6,6 +6,6 @@ import offlineMessageModule from './components/offline-message/offline-message.m
 
 export default angular.module('index.components', [
 	headerModule.name,
-	footerModule.name,
-	offlineMessageModule.name
+	offlineMessageModule.name,
+	footerModule.name
 ]);

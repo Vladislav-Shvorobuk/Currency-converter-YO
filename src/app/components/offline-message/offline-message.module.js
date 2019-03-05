@@ -15,13 +15,13 @@ offlineMessageModule.run(function($window, $rootScope) {
   $rootScope.isOffline = !navigator.onLine;
 
   $window.addEventListener('online', function() {
-    $rootScope.$apply(function() {
+    $rootScope.$applyAsync(function() {
       $rootScope.isOffline = false;
     });
   }, false);
 
   $window.addEventListener('offline', function() {
-    $rootScope.$apply(function() {
+    $rootScope.$applyAsync(function() {
       $rootScope.isOffline = true;
     });
   }, false);
